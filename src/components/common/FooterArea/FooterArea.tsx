@@ -1,5 +1,6 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
+import { Copyright } from '../Copyright/Copyright';
 import { LinkSizeSmall } from '../Nav/Link/index';
 import { Nav } from '../Nav/Nav';
 import navLinks from './NavLinks';
@@ -21,5 +22,6 @@ export const FooterArea: React.SFC<IFooterAreaProps> = (props) => (
     <Nav className={cnFooter('Nav')}>
       {NavItems}
     </Nav>
+    <Copyright />
   </div>
 );

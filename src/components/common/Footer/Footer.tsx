@@ -1,6 +1,5 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
-import { Copyright } from '../Copyright/Copyright';
 import { FooterArea } from '../FooterArea/FooterArea';
 
 import './Footer.css';
@@ -14,6 +13,6 @@ export interface IFooterProps {
 export const Footer: React.SFC<IFooterProps> = (props) => (
   <div className={cnFooter({},[props.className])}>
     <FooterArea />
-    <Copyright />
+   
   </div>
 );
