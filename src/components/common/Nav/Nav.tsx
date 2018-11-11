@@ -6,7 +6,7 @@ import './Nav.css';
 const cnNav = cn('Nav');
 
 export interface INavProps {
-  className?: any;
+  className?: string;
 }
 
 export const Nav: React.SFC<INavProps> = (props) => (

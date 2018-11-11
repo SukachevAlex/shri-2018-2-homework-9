@@ -1,0 +1,24 @@
+.MainArea {
+	margin: 34px 171px 79px;
+	margin-left: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
+}
+
+@media screen and (max-width: 1370px) {
+	.MainArea {
+    margin-left: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
+    margin-right: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.MainArea {
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.MainArea-Title {
+		margin-top: 0;
+	}
+}

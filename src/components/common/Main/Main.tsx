@@ -1,5 +1,6 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
+import { MainArea } from '../MainArea/MainArea';
 
 import './Main.css';
 
@@ -11,6 +12,6 @@ export interface IMainProps {
 
 export const Main: React.SFC<IMainProps> = (props) => (
   <div className={cnMain({},[props.className])}>
-    Content
+    <MainArea />
   </div>
 );
