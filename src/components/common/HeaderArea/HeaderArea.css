@@ -1,0 +1,26 @@
+.HeaderArea {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 calc(20px + (40 - 20) * ((100vw - 375px) / (1370 - 375)));
+}
+
+@media screen and (max-width: 750px) {
+	.HeaderArea {
+		justify-content: space-between;
+	}
+}
+
+.HeaderArea-Nav {
+	margin-left: 21px;
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 750px) {
+	.HeaderArea-Nav {
+		display: none;
+	}
+}

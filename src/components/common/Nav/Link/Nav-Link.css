@@ -1,0 +1,11 @@
+.Nav-Link {
+  color: #000;
+	line-height: 20px;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+.Nav-Link:hover {
+  color: red;
+	opacity: 1;
+}

@@ -3,34 +3,33 @@ function capitalize(str) {
 }
 
 const blockTmpl = (block) =>
-`
-  import * as React from 'react';
-  import { cn } from '@bem-react/classname';
+`import { cn } from '@bem-react/classname';
+import * as React from 'react';
 
-  import './${block}.css';
+import './${block}.css';
 
-  const cn${block} = cn('${block}');
+const cn${block} = cn('${block}');
 
-  export interface I${block}Props {
-  }
+export interface I${block}Props {
+  className?: string;
+}
 
 export const ${block}: React.SFC<I${block}Props> = (props) => (
   <div className={cn${block}()}></div>
 );
-
 `;
 
 const elemTmpl = (block, elem) =>
-`
-  import * as React from 'react';
-  import { cn } from '@bem-react/classname';
+`import { cn } from '@bem-react/classname';
+import * as React from 'react';
 
-  import './${block}-${elem}.css';
+import './${block}-${elem}.css';
 
-  const cn${block} = cn('${block}');
+const cn${block} = cn('${block}');
 
-  export interface I${block}${elem}Props {
-  }
+export interface I${block}${elem}Props {
+  className?: string;
+}
 
 export const ${elem}: React.SFC<I${block}${elem}Props> = (props) => (
   <div className={cn${block}('${elem}')}></div>
@@ -38,23 +37,20 @@ export const ${elem}: React.SFC<I${block}${elem}Props> = (props) => (
 `;
 
 const blockModTmpl = (block, mod) => 
-  `
-    import * as React from 'react';
-    import { ModBody } from '@bem-react/core';
-    
-    import './${block}_${mod.name}${mod.val && '_' + mod.val}.css';
-    import { I${block}Props } from '../${block}';
-    
-    export const ${block}${capitalize(mod.name)}${mod.val && capitalize(mod.val)}: ModBody<I${block}Props> = (Base, { className }) => (
-      <div className={className}></div>
-    )
-  `;
+`import { ModBody } from '@bem-react/core';
+import * as React from 'react';
+
+import './${block}_${mod.name}${mod.val && '_' + mod.val}.css';
+import { I${block}Props } from '../${block}';
+
+export const ${block}${capitalize(mod.name)}${mod.val && capitalize(mod.val)}: ModBody<I${block}Props> = (Base, { className }) => (
+  <div className={className}></div>
+)
+`;
 
 
 module.exports = ({ block, elem, mod={} }) => {
   const { name: modName } = mod;
-
-  console.log(modName);
   if (block && elem) {
     return elemTmpl(block, elem);
   } else if (block && modName) {

@@ -1,0 +1,26 @@
+.Header {
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Header::after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100vw;
+	background-color: #F0F0F0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+@media screen and (max-width: 768px) {
+	.Header::after {
+		display: none;
+	}
+}

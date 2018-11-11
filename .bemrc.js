@@ -2,15 +2,15 @@ module.exports = {
   levels: [
     {
       layer: 'common',
-      path: 'src/Components/common'
+      path: 'src/components/common'
     },
     {
       layer: 'desktop',
-      path: 'src/Components/desktop'
+      path: 'src/components/desktop'
     },
     {
       layer: 'touch',
-      path: 'src/Components/touch'
+      path: 'src/components/touch'
     }
   ].map(level => Object.assign({
     schemeOptions: 'react',
@@ -27,7 +27,7 @@ module.exports = {
       plugins: {
         create: {
           levels: {
-            'src/Components/common': { default: true }
+            'src/components/common': { default: true }
           },
           techs: ['tsx', 'css'],
           templates: {
