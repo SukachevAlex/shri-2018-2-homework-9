@@ -1,6 +1,13 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
-import { EventItem } from '../EventItem/EventItem';
+import { 
+  EventItemCriticalL, 
+  EventItemCriticalM, 
+  EventItemCriticalS, 
+  EventItemL, 
+  EventItemM, 
+  EventItemS  
+} from '../EventItem/index';
 
 import './EventArea.css';
 
@@ -12,14 +19,15 @@ export interface IEventAreaProps {
 
 export const EventArea: React.SFC<IEventAreaProps> = (props) => (
   <div className={cnEventArea()}>
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
-    <EventItem />
+    <EventItemL size="l"/>
+    <EventItemM size="m" />
+    <EventItemCriticalL critical={true} size="l" />
+    <EventItemS size="s" />
+    <EventItemS size="s"/>
+    <EventItemL size="l" />
+    <EventItemCriticalM critical={true} size="m"/>
+    <EventItemS size="s" />
+    <EventItemM size="m" />
+    <EventItemCriticalS critical={true} size="s"/>
   </div>
 );

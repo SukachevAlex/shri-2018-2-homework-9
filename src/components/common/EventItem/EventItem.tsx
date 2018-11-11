@@ -7,8 +7,10 @@ const cnEventItem = cn('EventItem');
 
 export interface IEventItemProps {
   className?: string;
+  critical?: boolean;
+  size?: 'l' | 'm' | 's';
 }
 
-export const EventItem: React.SFC<IEventItemProps> = (props) => (
-  <div className={cnEventItem()}>1</div>
+export const EventItem: React.SFC<IEventItemProps> = ({critical, size}) => (
+  <div className={cnEventItem({critical, size})}>1</div>
 );

@@ -37,15 +37,14 @@ export const ${elem}: React.SFC<I${block}${elem}Props> = (props) => (
 `;
 
 const blockModTmpl = (block, mod) => 
-`import { ModBody } from '@bem-react/core';
-import * as React from 'react';
+`import { withBemMod } from '@bem-react/core';
 
 import './${block}_${mod.name}${mod.val && '_' + mod.val}.css';
 import { I${block}Props } from '../${block}';
 
-export const ${block}${capitalize(mod.name)}${mod.val && capitalize(mod.val)}: ModBody<I${block}Props> = (Base, { className }) => (
-  <div className={className}></div>
+export const ${block}${capitalize(mod.name)}${mod.val && capitalize(mod.val)} = withBemMod<I${block}Props>(${block}, { ${mod.name}: ${mod.val} });
 )
+
 `;
 
 

@@ -1,4 +1,3 @@
-
 import { withBemMod } from '@bem-react/core';
 import { INavLinkProps } from '../Nav-Link';
 
