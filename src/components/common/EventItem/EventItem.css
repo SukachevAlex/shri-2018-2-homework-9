@@ -1,0 +1,49 @@
+.EventItem {
+  min-width: 200px;
+	grid-column: auto / span 2;
+	border-radius: 20px;
+	background: #fafafa;
+	transition: bacground-color, box-shadow 0.2s ease;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	outline: none;
+}
+
+.EventItem:hover {
+	background-color: #F3F3F3;
+	box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.5);
+	cursor: pointer;
+}
+
+.EventItem:hover::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 16px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-image: url("./Next.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	filter: drop-shadow(0px 0px 12px #000000);
+}
+
+.EventItem:hover::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-image: url("./cross.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	filter: drop-shadow(0px 0px 12px #000000);
+}
