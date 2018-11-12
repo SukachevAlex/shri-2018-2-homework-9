@@ -1,7 +1,7 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
 import { Copyright } from '../Copyright/Copyright';
-import { LinkSizeSmall } from '../Nav/Link/index';
+import { Link } from '../Nav/Link/index';
 import { Nav } from '../Nav/Nav';
 import navLinks from './NavLinks';
 
@@ -14,7 +14,7 @@ export interface IFooterAreaProps {
 }
 
 const NavItems = navLinks.map((item, index) => {
-  return <LinkSizeSmall url={item.url} target="_self" text={item.text} size="small" key={item.text}/>
+  return <Link url={item.url} target="_self" text={item.text} size="small" key={item.text}/>
 });
 
 export const FooterArea: React.SFC<IFooterAreaProps> = (props) => (

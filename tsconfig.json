@@ -20,7 +20,8 @@
     "alwaysStrict": true, 
     "importHelpers": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",

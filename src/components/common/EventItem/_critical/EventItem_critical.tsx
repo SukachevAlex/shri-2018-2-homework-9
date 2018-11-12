@@ -3,4 +3,4 @@ import { IEventItemProps } from '../EventItem';
 
 import './EventItem_critical.css';
 
-export const EventItemCriticalTrue =  withBemMod<IEventItemProps>('EventItem', { critical: true });
+export const EventItemCritical =  withBemMod<IEventItemProps>('EventItem', { critical: true });
