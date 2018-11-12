@@ -1,0 +1,7 @@
+.EventItem-BottomLine {
+  width: 100%;
+	height: 100%;
+	padding: 0 20px;
+	border-radius: 20px;
+	background: inherit;  
+}

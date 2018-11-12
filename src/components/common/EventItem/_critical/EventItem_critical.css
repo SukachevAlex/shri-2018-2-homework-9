@@ -11,13 +11,13 @@
   background-image: url("./cross-white.svg");
 }
 
-/* .event__item_critical .event__bottom-line {
+.EventItem_critical .EventItem-BottomLine {
 	padding-top: 5px;
 	margin-top: -15px;
 }
 
-.event__item_critical .event__top-line {
+.EventItem_critical .EventItem-TopLine {
 	background: #DB5341;
 	border-radius: 20px 20px 0 0;
 	padding-bottom: 35px;
-} */
+}
