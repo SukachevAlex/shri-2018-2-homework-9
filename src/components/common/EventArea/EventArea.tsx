@@ -13,12 +13,17 @@ export interface IEventAreaProps {
 }
 
 const events = Data.events.map((elem) => {
-  return <EventItem critical={elem.type === 'critical'} size={elem.size} key={elem.icon} />
+  return <EventItem 
+    key={elem.icon}
+    critical={elem.type === 'critical'} 
+    size={elem.size} 
+    title={elem.title}
+    icon={elem.icon} 
+    />
 });
  
 export const EventArea: React.SFC<IEventAreaProps> = (props) => (
   <div className={cnEventArea()}>
-
     {events}
   </div>
 );
