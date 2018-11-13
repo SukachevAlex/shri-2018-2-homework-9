@@ -1,6 +1,5 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
-import { Burger } from '../Burger/Burger';
 import { Logo } from '../Logo/Logo';
 import { Link } from '../Nav/Link/index';
 import { Nav } from '../Nav/Nav';
@@ -24,8 +23,6 @@ export const HeaderArea: React.SFC<IHeaderAreaProps> = (props) => (
     <Nav className={cnHeaderArea('Nav')}>
       {NavItems}
     </Nav>
-    <Burger />
-    123
   </div>
 );
 

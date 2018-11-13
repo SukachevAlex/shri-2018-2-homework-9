@@ -24,6 +24,9 @@
     "bem-react-core": "^2.2.3",
     "bem-tools-core": "0.0.3",
     "bem-tools-create": "^2.3.0",
+    "device-detector": "^1.0.2",
+    "install": "^0.12.2",
+    "npm": "^6.4.1",
     "tslint": "^5.11.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.1.6"
