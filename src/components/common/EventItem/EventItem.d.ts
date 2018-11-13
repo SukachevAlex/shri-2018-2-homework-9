@@ -1,4 +1,4 @@
-interface IData {
+export interface IData {
   temperature?: number,
   humidity?: number,
   type?: string,

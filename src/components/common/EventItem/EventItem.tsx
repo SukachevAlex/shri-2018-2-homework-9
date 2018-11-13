@@ -2,12 +2,11 @@ import { cn } from '@bem-react/classname';
 import * as React from 'react';
 import { IEventItem } from './EventItem.d';
 
+import { Data } from './Data/EventItem-Data';
 import { Description } from './Description/EventItem-Description';
 import './EventItem.css';
-import { Graph } from './Graph/EventItem-Graph';
 import { Icon } from './Icon/index';
 import { Source } from './Source/EventItem-Source';
-import { Thermal } from './Thermal/EventItem-Thermal';
 import { Time } from './Time/EventItem-Time';
 import { Title } from './Title/EventItem-Title';
 
@@ -36,10 +35,7 @@ export const EventItem: React.SFC<IEventItemProps> = ({critical, size, icon, tit
       <div className={cnEventItem('Footer')}>
         <Description description={description} />
       </div>
-      <div className={cnEventItem('Data')}>
-        {!!data && icon === 'stats' && <Graph />}
-        {!!data && data.humidity && data.temperature && <Thermal humidity={data.humidity} temperature={data.temperature}/>}
-      </div>
+      {!!data && <Data data={data} icon={icon}/>}
     </div>}
   </div>
 );
