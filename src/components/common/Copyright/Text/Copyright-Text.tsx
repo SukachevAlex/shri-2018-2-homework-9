@@ -11,9 +11,9 @@ export interface ICopyrightTextProps {
 }
 
 export const Text: React.SFC<ICopyrightTextProps> = (props) => (
-  <p className={cnCopyright('Text')}>&copy; 2001–2017 ООО &quot;
+  <p className={cnCopyright('Text')}>&copy; 2001–2017 ООО &laquo;
     <Link url="https://yandex.ru/" target="_blank" text="Яндекс"/>
-    &quot;
+    &raquo;
   </p>
 );
 

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { IEventItem } from './EventItem.d';
 
 import { Data } from './Data/EventItem-Data';
-import { Description } from './Description/EventItem-Description';
+import { EventItemDescription } from './Description/index';
 import './EventItem.css';
 import { Icon } from './Icon/index';
 import { Source } from './Source/EventItem-Source';
@@ -33,7 +33,7 @@ export const EventItem: React.SFC<IEventItemProps> = ({critical, size, icon, tit
     </div>
     {!!description && <div className={cnEventItem('BottomLine')}>
       <div className={cnEventItem('Footer')}>
-        <Description description={description} />
+        <EventItemDescription description={description} size={size === 'l' ? 'big' : ''}/>
       </div>
       {!!data && <Data data={data} icon={icon}/>}
     </div>}

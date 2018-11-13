@@ -14,10 +14,10 @@ export interface IEventItemThermalProps {
 export const Thermal: React.SFC<IEventItemThermalProps> = ({humidity, temperature}) => (
   <div className={cnEventItem('Thermal')}>
     <div className={cnEventItem('ThermalTemperature')}>
-        Температура: <span className={cnEventItem('ThermalTemperatureVal')}>{temperature}</span> C
+        Температура: <span className={cnEventItem('ThermalTemperatureVal')}>{temperature} C</span>
     </div>
     <div className={cnEventItem('ThermalHumidity')}>
-        Влажность: <span className={cnEventItem('ThermalHumidityVal')}>{humidity}</span>%
+        Влажность: <span className={cnEventItem('ThermalHumidityVal')}>{humidity}%</span>
     </div>
   </div>
 );

@@ -8,8 +8,9 @@ const cnEventItem = cn('EventItem');
 export interface IEventItemDescriptionProps {
   className?: string;
   description?: string | null;
+  size?: string;
 }
 
-export const Description: React.SFC<IEventItemDescriptionProps> = (props) => (
-  <div className={cnEventItem('Description')}> {props.description}</div>
+export const EventItemDescription: React.SFC<IEventItemDescriptionProps> = ({description, size}) => (
+  <div className={cnEventItem('Description', {size})}> {description}</div>
 );
