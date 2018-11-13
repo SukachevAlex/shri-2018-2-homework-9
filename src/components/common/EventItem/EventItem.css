@@ -119,3 +119,23 @@
 		justify-content: space-between;
 	}
 }
+
+.EventItem-ButtonArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+@media screen and (max-width: 510px) {
+	.EventItem-ButtonArea {
+		justify-content: space-between;
+	}
+}
+
+.EventItem-Button {
+	margin-left: 18px;
+}
+
+.EventItem-Button:first-of-type {
+	margin-left: 0;
+}
