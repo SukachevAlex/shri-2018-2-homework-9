@@ -119,3 +119,7 @@
 		justify-content: space-between;
 	}
 }
+
+.EventItem-Data {
+	margin-top: 31px;
+}
