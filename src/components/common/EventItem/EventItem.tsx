@@ -7,6 +7,7 @@ import './EventItem.css';
 import { Graph } from './Graph/EventItem-Graph';
 import { Icon } from './Icon/index';
 import { Source } from './Source/EventItem-Source';
+import { Thermal } from './Thermal/EventItem-Thermal';
 import { Time } from './Time/EventItem-Time';
 import { Title } from './Title/EventItem-Title';
 
@@ -36,7 +37,8 @@ export const EventItem: React.SFC<IEventItemProps> = ({critical, size, icon, tit
         <Description description={description} />
       </div>
       <div className={cnEventItem('Data')}>
-        {data && data.type === 'graph' && <Graph />}
+        {!!data && icon === 'stats' && <Graph />}
+        {!!data && data.humidity && data.temperature && <Thermal humidity={data.humidity} temperature={data.temperature}/>}
       </div>
     </div>}
   </div>
