@@ -13,10 +13,12 @@ export interface IEventItemDataProps extends IData{
   icon?: string;
 }
 
-export const Data: React.SFC<IEventItemDataProps> = (data, icon) => (
+export const Data: React.SFC<IEventItemDataProps> = ({data, icon}) => (
   <div className={cnEventItem('Data')}>
     {icon === 'stats' && <Graph />}
-    {data.humidity && data.temperature && <Thermal humidity={data.humidity} temperature={data.temperature}/>}
+    {icon === 'thermal' && data && data.humidity && data.temperature && 
+      <Thermal humidity={data.humidity} temperature={data.temperature}/>
+    }
   </div>
 );
 
