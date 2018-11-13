@@ -1,6 +1,5 @@
 .MainArea {
 	margin: 34px 171px 79px;
-	margin-left: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
 }
 
 @media screen and (max-width: 1370px) {

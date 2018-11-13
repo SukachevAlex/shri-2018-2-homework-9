@@ -18,7 +18,9 @@ const events = Data.events.map((elem) => {
     critical={elem.type === 'critical'} 
     size={elem.size} 
     title={elem.title}
-    icon={elem.icon} 
+    icon={elem.icon}
+    time={elem.time}
+    source={elem.source} 
     />
 });
  
