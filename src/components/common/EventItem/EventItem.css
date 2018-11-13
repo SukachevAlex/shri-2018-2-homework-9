@@ -104,13 +104,8 @@
 @media screen and (max-width: 1370px) {
 	.EventItem-Main {
 		line-height: calc(14px + (21 - 14) * ((100vw - 375px) / (1370 - 375)));
-	}
-}
-
-@media screen and (max-width: 1370px) {
-	.EventItem-Main {
 		font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (1370 - 375)));
-	}	
+	}
 }
 
 .EventItem_size_s .EventItem-Main {

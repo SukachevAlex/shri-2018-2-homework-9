@@ -20,7 +20,8 @@ const events = Data.events.map((elem) => {
     title={elem.title}
     icon={elem.icon}
     time={elem.time}
-    source={elem.source} 
+    source={elem.source}
+    description={elem.description}
     />
 });
  

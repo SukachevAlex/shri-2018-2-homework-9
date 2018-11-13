@@ -14,11 +14,6 @@
 @media screen and (max-width: 1370px) {
 	.EventItem-Title {
 			line-height: calc(17px + (28 - 17) * ((100vw - 375px) / (1370 - 375)));
-	}
-}
-
-@media screen and (max-width: 1370px) {
-	.EventItem-Title {
 			font-size: calc(14px + (24 - 14) * ((100vw - 375px) / (1370 - 375)));
 	}
 }

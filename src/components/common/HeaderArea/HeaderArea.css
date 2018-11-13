@@ -12,15 +12,12 @@
 	.HeaderArea {
 		justify-content: space-between;
 	}
+	.HeaderArea-Nav {
+		display: none;
+	}
 }
 
 .HeaderArea-Nav {
 	margin-left: 21px;
 	margin-top: 8px;
-}
-
-@media screen and (max-width: 750px) {
-	.HeaderArea-Nav {
-		display: none;
-	}
 }
