@@ -38,6 +38,12 @@
 	align-items: center;
 }
 
+.FooterArea-Nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
 @media screen and (max-width: 768px) {
   .FooterArea {
 		flex-direction: column;
@@ -50,10 +56,4 @@
 		justify-content: center;
 		order: 2;
 	}
-}
-
-.FooterArea-Nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
 }

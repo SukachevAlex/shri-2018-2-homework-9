@@ -9,7 +9,7 @@ export interface ICameraInfoProps {
   className?: string;
 }
 
-export const Info: React.SFC<ICameraInfoProps> = (props) => (
+export const Info: React.SFC<ICameraInfoProps> = () => (
   <div className={cnCamera('Info')}>
     <div className={cnCamera('InfoZoom')}>
       Приближение: 

@@ -10,7 +10,7 @@ export interface ICopyrightProps {
   className?: string;
 }
 
-export const Copyright: React.SFC<ICopyrightProps> = (props) => (
+export const Copyright: React.SFC<ICopyrightProps> = () => (
   <div className={cnCopyright()}>
     <Text />
   </div>

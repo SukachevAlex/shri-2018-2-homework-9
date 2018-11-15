@@ -10,6 +10,6 @@ export interface IPlayerProps {
   className?: string;
 }
 
-export const Player: React.SFC<IPlayerProps> = (props) => (
+export const Player: React.SFC<IPlayerProps> = () => (
   <img className={cnPlayer()} src={img} alt="Stub" />
 );

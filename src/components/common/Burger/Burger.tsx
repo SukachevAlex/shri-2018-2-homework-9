@@ -9,6 +9,6 @@ export interface IBurgerProps {
   className?: string;
 }
 
-export const Burger: React.SFC<IBurgerProps> = (props) => (
+export const Burger: React.SFC<IBurgerProps> = () => (
   <div className={cnBurger()} />
 );
