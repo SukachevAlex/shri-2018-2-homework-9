@@ -31,7 +31,7 @@ export interface I${block}${elem}Props {
   className?: string;
 }
 
-export const ${elem}: React.SFC<I${block}${elem}Props> = (props) => (
+export const ${block}${elem}: React.SFC<I${block}${elem}Props> = (props) => (
   <div className={cn${block}('${elem}')}></div>
 );
 `;

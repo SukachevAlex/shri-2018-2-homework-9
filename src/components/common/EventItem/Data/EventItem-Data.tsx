@@ -35,7 +35,9 @@ export const Data: React.SFC<IEventItemDataProps> = ({data, icon}) => {
           {btn}
         </div>
       }
-      {icon === 'music' && <Player />}
+      {icon === 'music' && data && data.track && 
+        <Player artistName={data.artist} trackName={data.track.name} length={data.track.length} volume={data.volume}/>
+        }
     </div>
   );
 }
