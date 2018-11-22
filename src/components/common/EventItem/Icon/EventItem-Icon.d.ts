@@ -1,4 +1,6 @@
-export interface IEventItemIconProps {
+import { IClassNameProps } from "@bem-react/core";
+
+export interface IEventItemIconProps extends IClassNameProps {
   className?: string;
   icon?: string;
   ac?: boolean;

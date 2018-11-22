@@ -1,8 +1,8 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
 import { Button } from '../../Button/index';
+import { Camera } from '../../Camera/Camera';
 import { Player } from '../../Player/Player';
-import { Camera } from '../Camera/Camera';
 import { IData } from '../EventItem.d';
 import { Graph } from '../Graph/EventItem-Graph';
 import { Thermal } from '../Thermal/EventItem-Thermal';

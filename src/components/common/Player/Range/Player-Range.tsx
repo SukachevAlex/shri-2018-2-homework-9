@@ -1,19 +1,10 @@
 import { cn } from '@bem-react/classname';
 import * as React from 'react';
 
+import { IPlayerRangeProps } from './index';
 import './Player-Range.css';
 
 const cnPlayer = cn('Player');
-
-export interface IPlayerRangeProps {
-  className?: string;
-  max?: number;
-  min?: number;
-  step?: number;
-  time?: boolean;
-  value?: string;
-  volume?: boolean;
-}
 
 export const PlayerRange: React.SFC<IPlayerRangeProps> = ({max, min, step, value, time, volume }) => (
     <input  

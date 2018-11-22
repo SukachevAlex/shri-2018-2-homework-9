@@ -1,5 +1,5 @@
 import { withBemMod } from '@bem-react/core';
-import { IEventItemDescriptionProps } from '../EventItem-Description';
+import { IEventItemDescriptionProps } from '../index';
 
 import './EventItem-Description_size_big.css';
 

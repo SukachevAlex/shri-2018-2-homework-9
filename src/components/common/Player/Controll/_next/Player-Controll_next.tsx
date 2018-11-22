@@ -1,5 +1,5 @@
 import { withBemMod } from '@bem-react/core';
-import { IPlayerControllProps } from '../Player-Controll';
+import { IPlayerControllProps } from '../index';
 
 import './Player-Controll_next.css';
 

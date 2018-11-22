@@ -1,5 +1,5 @@
 import { withBemMod } from '@bem-react/core';
-import { INavLinkProps } from '../Nav-Link';
+import { INavLinkProps } from '../index';
 
 import './Nav-Link_size_small.css';
 

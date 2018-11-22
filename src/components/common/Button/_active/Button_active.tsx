@@ -1,5 +1,5 @@
 import { withBemMod } from '@bem-react/core';
-import { IButtonProps } from '../Button';
+import { IButtonProps } from '../index';
 
 import './Button_active.css';
 
